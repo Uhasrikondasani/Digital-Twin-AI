@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f7fc;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:40px;
+}
+
+.contact-box{
+
+width:100%;
+max-width:1100px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+display:grid;
+grid-template-columns:2fr 1fr;
+overflow:hidden;
+
+}
+
+.left{
+
+padding:45px;
+
+}
+
+.right{
+
+padding:45px;
+background:#fafbff;
+border-left:1px solid #eee;
+
+}
+
+h2{
+
+color:#1f2d3d;
+margin-bottom:10px;
+
+}
+
+p{
+
+color:#666;
+margin-bottom:30px;
+
+}
+
+.input-box{
+
+margin-bottom:18px;
+
+}
+
+input,
+textarea{
+
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:8px;
+outline:none;
+font-size:15px;
+
+}
+
+textarea{
+
+height:160px;
+resize:none;
+
+}
+
+input:focus,
+textarea:focus{
+
+border-color:#5d5fef;
+
+}
+
+button{
+
+width:100%;
+padding:15px;
+border:none;
+border-radius:30px;
+
+background:linear-gradient(90deg,#4f8cff,#8d42ff);
+
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px);
+
+}
+
+.info{
+
+margin-bottom:20px;
+display:flex;
+gap:15px;
+align-items:flex-start;
+
+}
+
+.info i{
+
+color:#5d5fef;
+font-size:18px;
+margin-top:4px;
+
+}
+
+.social{
+
+margin-top:30px;
+
+}
+
+.social a{
+
+display:inline-flex;
+justify-content:center;
+align-items:center;
+
+width:42px;
+height:42px;
+
+border-radius:50%;
+
+background:#eef2ff;
+
+margin-right:10px;
+
+color:#5d5fef;
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.social a:hover{
+
+background:#5d5fef;
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.contact-box{
+
+grid-template-columns:1fr;
+
+}
+
+.right{
+
+border-left:none;
+border-top:1px solid #eee;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contact-box">
+
+<div class="left">
+
+<h2>📧 Get in Touch</h2>
+
+<p>Have a question or project in mind? We'd love to hear from you.</p>
+
+<form>
+
+<div class="input-box">
+<input type="text" placeholder="Full Name" required>
+</div>
+
+<div class="input-box">
+<input type="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-box">
+<input type="text" placeholder="Subject">
+</div>
+
+<div class="input-box">
+<textarea placeholder="Write your message here..."></textarea>
+</div>
+
+<button type="submit">
+<i class="fa-solid fa-paper-plane"></i>
+Send Message
+</button>
+
+</form>
+
+</div>
+
+<div class="right">
+
+<h2>Contact Information</h2>
+
+<div class="info">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<strong>Email</strong><br>
+
+support@yourwebsite.com
+
+</div>
+
+</div>
+
+<div class="info">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<strong>Phone</strong><br>
+
++91 98765 43210
+
+</div>
+
+</div>
+
+<div class="info">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<strong>Address</strong><br>
+
+Vijayawada, Andhra Pradesh, India
+
+</div>
+
+</div>
+
+<div class="info">
+
+<i class="fa-solid fa-clock"></i>
+
+<div>
+
+<strong>Working Hours</strong><br>
+
+Mon - Fri : 9:00 AM - 6:00 PM
+
+</div>
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
